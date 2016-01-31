@@ -8,7 +8,7 @@ int main() {
   string input_line;
   bool quote_flag = false; 
   while (getline(cin, input_line)) {
-    for (char input_ch : input_line)
+    for (auto input_ch : input_line)
       if (input_ch == '\"' && quote_flag == 0) {
         cout << "``";
         quote_flag = 1;
