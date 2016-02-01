@@ -23,6 +23,7 @@ int main() {
         break;
       }
     }
+    if (i < n - 1) cout << endl;
   }
   return 0;
 }
