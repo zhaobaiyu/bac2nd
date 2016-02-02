@@ -8,13 +8,13 @@ int main() {
   int n, game_order = 1;
   while (cin >> n && n != 0) {
     cout << "Game " << game_order++ << ":" << endl;
-    int origin_num[105], guess_num[105];
+    int origin_num[1005], guess_num[1005];
     for (int i = 0; i < n; ++i) cin >> origin_num[i];
     bool end_flag(true);
     while (end_flag) {
       end_flag = false;
       int a_ans = 0, b_ans = 0;
-      bool match_origin_num[105], match_guess_num[105];
+      bool match_origin_num[1005], match_guess_num[1005];
       for (int i = 0; i < n; ++i) {
         match_origin_num[i] = false;
         match_guess_num[i] = false;
