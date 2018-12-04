@@ -1,3 +1,6 @@
+# ignore samples
+samples/
+
 # ignore all files in the bin/ directory
 bin/
 
